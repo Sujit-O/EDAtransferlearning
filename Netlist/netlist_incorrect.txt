@@ -1,0 +1,241 @@
+// Generated for: spectre
+// Generated on: Nov 30 23:05:35 2018
+// Design library name: Kakia_sim_steven
+// Design cell name: test
+// Design view name: schematic
+simulator lang=spectre
+global 0
+include "/home/apps/cadence/save_only_net.sp"
+parameters Vin=1
+include "/home/foundry/dongbu/BD180LVA/PDK/IC6.1/DPDK_IC6p1_1830bd15ba_Rev2p2_0_1P4M_Thick_KTSH41_lic26_stu_07ab2/1830bd15ba/../models/Spectre_lib/1830BD15BA_Rev2p2.scs" section=tt_lvt050
+include "/home/foundry/dongbu/BD180LVA/PDK/IC6.1/DPDK_IC6p1_1830bd15ba_Rev2p2_0_1P4M_Thick_KTSH41_lic26_stu_07ab2/1830bd15ba/../models/Spectre_lib/1830BD15BA_Rev2p2.scs" section=tt_p_ldm_sp_7v
+include "/home/foundry/dongbu/BD180LVA/PDK/IC6.1/DPDK_IC6p1_1830bd15ba_Rev2p2_0_1P4M_Thick_KTSH41_lic26_stu_07ab2/1830bd15ba/../models/Spectre_lib/1830BD15BA_Rev2p2.scs" section=tt_p_ldm_sp_10v
+include "/home/foundry/dongbu/BD180LVA/PDK/IC6.1/DPDK_IC6p1_1830bd15ba_Rev2p2_0_1P4M_Thick_KTSH41_lic26_stu_07ab2/1830bd15ba/../models/Spectre_lib/1830BD15BA_Rev2p2.scs" section=tt_n_ldmls_35v
+include "/home/foundry/dongbu/BD180LVA/PDK/IC6.1/DPDK_IC6p1_1830bd15ba_Rev2p2_0_1P4M_Thick_KTSH41_lic26_stu_07ab2/1830bd15ba/../models/Spectre_lib/1830BD15BA_Rev2p2.scs" section=tt_n_ldmls_6v
+include "/home/foundry/dongbu/BD180LVA/PDK/IC6.1/DPDK_IC6p1_1830bd15ba_Rev2p2_0_1P4M_Thick_KTSH41_lic26_stu_07ab2/1830bd15ba/../models/Spectre_lib/1830BD15BA_Rev2p2.scs" section=tt_n_ldmhs_6v
+include "/home/foundry/dongbu/BD180LVA/PDK/IC6.1/DPDK_IC6p1_1830bd15ba_Rev2p2_0_1P4M_Thick_KTSH41_lic26_stu_07ab2/1830bd15ba/../models/Spectre_lib/1830BD15BA_Rev2p2.scs" section=tt_p_ldm_10v
+include "/home/foundry/dongbu/BD180LVA/PDK/IC6.1/DPDK_IC6p1_1830bd15ba_Rev2p2_0_1P4M_Thick_KTSH41_lic26_stu_07ab2/1830bd15ba/../models/Spectre_lib/1830BD15BA_Rev2p2.scs" section=tt_n_ldmlsn_24v
+include "/home/foundry/dongbu/BD180LVA/PDK/IC6.1/DPDK_IC6p1_1830bd15ba_Rev2p2_0_1P4M_Thick_KTSH41_lic26_stu_07ab2/1830bd15ba/../models/Spectre_lib/1830BD15BA_Rev2p2.scs" section=tt_n_ldmhsn_20v
+include "/home/foundry/dongbu/BD180LVA/PDK/IC6.1/DPDK_IC6p1_1830bd15ba_Rev2p2_0_1P4M_Thick_KTSH41_lic26_stu_07ab2/1830bd15ba/../models/Spectre_lib/1830BD15BA_Rev2p2.scs" section=tt_n_ldmhs_7v
+include "/home/foundry/dongbu/BD180LVA/PDK/IC6.1/DPDK_IC6p1_1830bd15ba_Rev2p2_0_1P4M_Thick_KTSH41_lic26_stu_07ab2/1830bd15ba/../models/Spectre_lib/1830BD15BA_Rev2p2.scs" section=tt_n_ldmhs_10v
+include "/home/foundry/dongbu/BD180LVA/PDK/IC6.1/DPDK_IC6p1_1830bd15ba_Rev2p2_0_1P4M_Thick_KTSH41_lic26_stu_07ab2/1830bd15ba/../models/Spectre_lib/1830BD15BA_Rev2p2.scs" section=tt_n_ldm_iso_7v
+include "/home/foundry/dongbu/BD180LVA/PDK/IC6.1/DPDK_IC6p1_1830bd15ba_Rev2p2_0_1P4M_Thick_KTSH41_lic26_stu_07ab2/1830bd15ba/../models/Spectre_lib/1830BD15BA_Rev2p2.scs" section=tt_n_ldm_iso_10v
+include "/home/foundry/dongbu/BD180LVA/PDK/IC6.1/DPDK_IC6p1_1830bd15ba_Rev2p2_0_1P4M_Thick_KTSH41_lic26_stu_07ab2/1830bd15ba/../models/Spectre_lib/1830BD15BA_Rev2p2.scs" section=tt_dio_esd
+include "/home/foundry/dongbu/BD180LVA/PDK/IC6.1/DPDK_IC6p1_1830bd15ba_Rev2p2_0_1P4M_Thick_KTSH41_lic26_stu_07ab2/1830bd15ba/../models/Spectre_lib/1830BD15BA_Rev2p2.scs" section=tt_svt050
+include "/home/foundry/dongbu/BD180LVA/PDK/IC6.1/DPDK_IC6p1_1830bd15ba_Rev2p2_0_1P4M_Thick_KTSH41_lic26_stu_07ab2/1830bd15ba/../models/Spectre_lib/1830BD15BA_Rev2p2.scs" section=tt_p_dea_nbl_40v
+include "/home/foundry/dongbu/BD180LVA/PDK/IC6.1/DPDK_IC6p1_1830bd15ba_Rev2p2_0_1P4M_Thick_KTSH41_lic26_stu_07ab2/1830bd15ba/../models/Spectre_lib/1830BD15BA_Rev2p2.scs" section=tt_p_dea_nbl_30v
+include "/home/foundry/dongbu/BD180LVA/PDK/IC6.1/DPDK_IC6p1_1830bd15ba_Rev2p2_0_1P4M_Thick_KTSH41_lic26_stu_07ab2/1830bd15ba/../models/Spectre_lib/1830BD15BA_Rev2p2.scs" section=tt_p_dea_nbl_20v
+include "/home/foundry/dongbu/BD180LVA/PDK/IC6.1/DPDK_IC6p1_1830bd15ba_Rev2p2_0_1P4M_Thick_KTSH41_lic26_stu_07ab2/1830bd15ba/../models/Spectre_lib/1830BD15BA_Rev2p2.scs" section=tt_p_dea_nbl_7v
+include "/home/foundry/dongbu/BD180LVA/PDK/IC6.1/DPDK_IC6p1_1830bd15ba_Rev2p2_0_1P4M_Thick_KTSH41_lic26_stu_07ab2/1830bd15ba/../models/Spectre_lib/1830BD15BA_Rev2p2.scs" section=tt_n_dea_40v
+include "/home/foundry/dongbu/BD180LVA/PDK/IC6.1/DPDK_IC6p1_1830bd15ba_Rev2p2_0_1P4M_Thick_KTSH41_lic26_stu_07ab2/1830bd15ba/../models/Spectre_lib/1830BD15BA_Rev2p2.scs" section=tt_n_dea_30v
+include "/home/foundry/dongbu/BD180LVA/PDK/IC6.1/DPDK_IC6p1_1830bd15ba_Rev2p2_0_1P4M_Thick_KTSH41_lic26_stu_07ab2/1830bd15ba/../models/Spectre_lib/1830BD15BA_Rev2p2.scs" section=tt_n_dea_20v
+include "/home/foundry/dongbu/BD180LVA/PDK/IC6.1/DPDK_IC6p1_1830bd15ba_Rev2p2_0_1P4M_Thick_KTSH41_lic26_stu_07ab2/1830bd15ba/../models/Spectre_lib/1830BD15BA_Rev2p2.scs" section=tt_n_dea_18v
+include "/home/foundry/dongbu/BD180LVA/PDK/IC6.1/DPDK_IC6p1_1830bd15ba_Rev2p2_0_1P4M_Thick_KTSH41_lic26_stu_07ab2/1830bd15ba/../models/Spectre_lib/1830BD15BA_Rev2p2.scs" section=tt_n_dea_7v
+include "/home/foundry/dongbu/BD180LVA/PDK/IC6.1/DPDK_IC6p1_1830bd15ba_Rev2p2_0_1P4M_Thick_KTSH41_lic26_stu_07ab2/1830bd15ba/../models/Spectre_lib/1830BD15BA_Rev2p2.scs" section=typ_cap
+include "/home/foundry/dongbu/BD180LVA/PDK/IC6.1/DPDK_IC6p1_1830bd15ba_Rev2p2_0_1P4M_Thick_KTSH41_lic26_stu_07ab2/1830bd15ba/../models/Spectre_lib/1830BD15BA_Rev2p2.scs" section=tt_svt018
+include "/home/foundry/dongbu/BD180LVA/PDK/IC6.1/DPDK_IC6p1_1830bd15ba_Rev2p2_0_1P4M_Thick_KTSH41_lic26_stu_07ab2/1830bd15ba/../models/Spectre_lib/1830BD15BA_Rev2p2.scs" section=tt_p_ldm_40v
+include "/home/foundry/dongbu/BD180LVA/PDK/IC6.1/DPDK_IC6p1_1830bd15ba_Rev2p2_0_1P4M_Thick_KTSH41_lic26_stu_07ab2/1830bd15ba/../models/Spectre_lib/1830BD15BA_Rev2p2.scs" section=tt_p_ldm_30v
+include "/home/foundry/dongbu/BD180LVA/PDK/IC6.1/DPDK_IC6p1_1830bd15ba_Rev2p2_0_1P4M_Thick_KTSH41_lic26_stu_07ab2/1830bd15ba/../models/Spectre_lib/1830BD15BA_Rev2p2.scs" section=tt_p_ldm_20v
+include "/home/foundry/dongbu/BD180LVA/PDK/IC6.1/DPDK_IC6p1_1830bd15ba_Rev2p2_0_1P4M_Thick_KTSH41_lic26_stu_07ab2/1830bd15ba/../models/Spectre_lib/1830BD15BA_Rev2p2.scs" section=tt_p_ldm_7v
+include "/home/foundry/dongbu/BD180LVA/PDK/IC6.1/DPDK_IC6p1_1830bd15ba_Rev2p2_0_1P4M_Thick_KTSH41_lic26_stu_07ab2/1830bd15ba/../models/Spectre_lib/1830BD15BA_Rev2p2.scs" section=tt_n_ldmls_40v
+include "/home/foundry/dongbu/BD180LVA/PDK/IC6.1/DPDK_IC6p1_1830bd15ba_Rev2p2_0_1P4M_Thick_KTSH41_lic26_stu_07ab2/1830bd15ba/../models/Spectre_lib/1830BD15BA_Rev2p2.scs" section=tt_n_ldmls_30v
+include "/home/foundry/dongbu/BD180LVA/PDK/IC6.1/DPDK_IC6p1_1830bd15ba_Rev2p2_0_1P4M_Thick_KTSH41_lic26_stu_07ab2/1830bd15ba/../models/Spectre_lib/1830BD15BA_Rev2p2.scs" section=tt_n_ldmls_24v
+include "/home/foundry/dongbu/BD180LVA/PDK/IC6.1/DPDK_IC6p1_1830bd15ba_Rev2p2_0_1P4M_Thick_KTSH41_lic26_stu_07ab2/1830bd15ba/../models/Spectre_lib/1830BD15BA_Rev2p2.scs" section=tt_n_ldmhsn_12v
+include "/home/foundry/dongbu/BD180LVA/PDK/IC6.1/DPDK_IC6p1_1830bd15ba_Rev2p2_0_1P4M_Thick_KTSH41_lic26_stu_07ab2/1830bd15ba/../models/Spectre_lib/1830BD15BA_Rev2p2.scs" section=tt_n_ldmhs_35v
+include "/home/foundry/dongbu/BD180LVA/PDK/IC6.1/DPDK_IC6p1_1830bd15ba_Rev2p2_0_1P4M_Thick_KTSH41_lic26_stu_07ab2/1830bd15ba/../models/Spectre_lib/1830BD15BA_Rev2p2.scs" section=tt_n_ldmhs_30v
+include "/home/foundry/dongbu/BD180LVA/PDK/IC6.1/DPDK_IC6p1_1830bd15ba_Rev2p2_0_1P4M_Thick_KTSH41_lic26_stu_07ab2/1830bd15ba/../models/Spectre_lib/1830BD15BA_Rev2p2.scs" section=tt_n_ldmhs_24v
+include "/home/foundry/dongbu/BD180LVA/PDK/IC6.1/DPDK_IC6p1_1830bd15ba_Rev2p2_0_1P4M_Thick_KTSH41_lic26_stu_07ab2/1830bd15ba/../models/Spectre_lib/1830BD15BA_Rev2p2.scs" section=tt_n_ldmhs_20v
+include "/home/foundry/dongbu/BD180LVA/PDK/IC6.1/DPDK_IC6p1_1830bd15ba_Rev2p2_0_1P4M_Thick_KTSH41_lic26_stu_07ab2/1830bd15ba/../models/Spectre_lib/1830BD15BA_Rev2p2.scs" section=tt_n_ldmhs_16v
+include "/home/foundry/dongbu/BD180LVA/PDK/IC6.1/DPDK_IC6p1_1830bd15ba_Rev2p2_0_1P4M_Thick_KTSH41_lic26_stu_07ab2/1830bd15ba/../models/Spectre_lib/1830BD15BA_Rev2p2.scs" section=tt_n_ldmhs_12v
+include "/home/foundry/dongbu/BD180LVA/PDK/IC6.1/DPDK_IC6p1_1830bd15ba_Rev2p2_0_1P4M_Thick_KTSH41_lic26_stu_07ab2/1830bd15ba/../models/Spectre_lib/1830BD15BA_Rev2p2.scs" section=tt_n_ldm_iso_20v
+include "/home/foundry/dongbu/BD180LVA/PDK/IC6.1/DPDK_IC6p1_1830bd15ba_Rev2p2_0_1P4M_Thick_KTSH41_lic26_stu_07ab2/1830bd15ba/../models/Spectre_lib/1830BD15BA_Rev2p2.scs" section=tt_n_ldm_iso_16v
+include "/home/foundry/dongbu/BD180LVA/PDK/IC6.1/DPDK_IC6p1_1830bd15ba_Rev2p2_0_1P4M_Thick_KTSH41_lic26_stu_07ab2/1830bd15ba/../models/Spectre_lib/1830BD15BA_Rev2p2.scs" section=tt_bip
+include "/home/foundry/dongbu/BD180LVA/PDK/IC6.1/DPDK_IC6p1_1830bd15ba_Rev2p2_0_1P4M_Thick_KTSH41_lic26_stu_07ab2/1830bd15ba/../models/Spectre_lib/1830BD15BA_Rev2p2.scs" section=tt_mom
+include "/home/foundry/dongbu/BD180LVA/PDK/IC6.1/DPDK_IC6p1_1830bd15ba_Rev2p2_0_1P4M_Thick_KTSH41_lic26_stu_07ab2/1830bd15ba/../models/Spectre_lib/1830BD15BA_Rev2p2.scs" section=tt_ecel
+include "/home/foundry/dongbu/BD180LVA/PDK/IC6.1/DPDK_IC6p1_1830bd15ba_Rev2p2_0_1P4M_Thick_KTSH41_lic26_stu_07ab2/1830bd15ba/../models/Spectre_lib/1830BD15BA_Rev2p2.scs" section=tt_eecel
+include "/home/foundry/dongbu/BD180LVA/PDK/IC6.1/DPDK_IC6p1_1830bd15ba_Rev2p2_0_1P4M_Thick_KTSH41_lic26_stu_07ab2/1830bd15ba/../models/Spectre_lib/1830BD15BA_Rev2p2.scs" section=setup
+include "/home/foundry/dongbu/BD180LVA/PDK/IC6.1/DPDK_IC6p1_1830bd15ba_Rev2p2_0_1P4M_Thick_KTSH41_lic26_stu_07ab2/1830bd15ba/../models/Spectre_lib/1830BD15BA_Rev2p2.scs" section=tt_p_dea_nbl_12v
+include "/home/foundry/dongbu/BD180LVA/PDK/IC6.1/DPDK_IC6p1_1830bd15ba_Rev2p2_0_1P4M_Thick_KTSH41_lic26_stu_07ab2/1830bd15ba/../models/Spectre_lib/1830BD15BA_Rev2p2.scs" section=tt_n_dea_12v
+include "/home/foundry/dongbu/BD180LVA/PDK/IC6.1/DPDK_IC6p1_1830bd15ba_Rev2p2_0_1P4M_Thick_KTSH41_lic26_stu_07ab2/1830bd15ba/../models/Spectre_lib/1830BD15BA_Rev2p2.scs" section=tt_p_des_ftr_18v
+include "/home/foundry/dongbu/BD180LVA/PDK/IC6.1/DPDK_IC6p1_1830bd15ba_Rev2p2_0_1P4M_Thick_KTSH41_lic26_stu_07ab2/1830bd15ba/../models/Spectre_lib/1830BD15BA_Rev2p2.scs" section=tt_n_dea_iso_7v
+include "/home/foundry/dongbu/BD180LVA/PDK/IC6.1/DPDK_IC6p1_1830bd15ba_Rev2p2_0_1P4M_Thick_KTSH41_lic26_stu_07ab2/1830bd15ba/../models/Spectre_lib/1830BD15BA_Rev2p2.scs" section=tt_n_dea_iso_20v
+include "/home/foundry/dongbu/BD180LVA/PDK/IC6.1/DPDK_IC6p1_1830bd15ba_Rev2p2_0_1P4M_Thick_KTSH41_lic26_stu_07ab2/1830bd15ba/../models/Spectre_lib/1830BD15BA_Rev2p2.scs" section=tt_esd
+include "/home/foundry/dongbu/BD180LVA/PDK/IC6.1/DPDK_IC6p1_1830bd15ba_Rev2p2_0_1P4M_Thick_KTSH41_lic26_stu_07ab2/1830bd15ba/../models/Spectre_lib/1830BD15BA_Rev2p2.scs" section=typ_res
+include "/home/foundry/dongbu/BD180LVA/PDK/IC6.1/DPDK_IC6p1_1830bd15ba_Rev2p2_0_1P4M_Thick_KTSH41_lic26_stu_07ab2/1830bd15ba/../models/Spectre_lib/1830BD15BA_Rev2p2.scs" section=tt_dio
+
+// Library name: Kakia_bias_sch
+// Cell name: V5ISO_SCHMT_AR
+// View name: schematic
+subckt V5ISO_SCHMT_AR a sub vn vp x xb
+    NM19 (xb ahyst vn vn vp sub) nch_svt_iso_5p0v length=500n \
+        width=(2.24u) multi=1 m=1 ad=1.0752p as=1.0752p pd=5.44u ps=5.44u \
+        option_vop=7.7 trise=0 sa=448n sb=448n sca=0 scb=0 scc=0 nrd=44.8m \
+        nrs=44.8m isoring=0
+    NM18 (ahyst vtn vn vn vp sub) nch_svt_iso_5p0v length=500n \
+        width=(2.24u) multi=1 m=1 ad=1.0752p as=1.0752p pd=5.44u ps=5.44u \
+        option_vop=7.7 trise=0 sa=448n sb=448n sca=0 scb=0 scc=0 nrd=44.8m \
+        nrs=44.8m isoring=0
+    NM17 (vtn a vn vn vp sub) nch_svt_iso_5p0v length=500n width=(2.24u) \
+        multi=1 m=1 ad=1.0752p as=1.0752p pd=5.44u ps=5.44u option_vop=7.7 \
+        trise=0 sa=448n sb=448n sca=0 scb=0 scc=0 nrd=44.8m nrs=44.8m \
+        isoring=0
+    NM16 (vtp a net156 vn vp sub) nch_svt_iso_5p0v length=1.4u \
+        width=(450n) multi=1 m=1 ad=216f as=216f pd=1.86u ps=1.86u \
+        option_vop=7.7 trise=0 sa=448n sb=448n sca=0 scb=0 scc=0 nrd=44.8m \
+        nrs=44.8m isoring=0
+    NM15 (ahyst xb net162 vn vp sub) nch_svt_iso_5p0v length=1.35u \
+        width=(220n) multi=1 m=1 ad=198.4f as=198.4f pd=1.88u ps=1.88u \
+        option_vop=7.7 trise=0 sa=448n sb=448n sca=0 scb=0 scc=0 nrd=44.8m \
+        nrs=44.8m isoring=0
+    NM14 (x xb vn vn vp sub) nch_svt_iso_5p0v length=500n width=(2.24u) \
+        multi=1 m=1 ad=1.0752p as=1.0752p pd=5.44u ps=5.44u option_vop=7.7 \
+        trise=0 sa=448n sb=448n sca=0 scb=0 scc=0 nrd=44.8m nrs=44.8m \
+        isoring=0
+    NM13 (net156 a net174 vn vp sub) nch_svt_iso_5p0v length=1.4u \
+        width=(450n) multi=1 m=1 ad=216f as=216f pd=1.86u ps=1.86u \
+        option_vop=7.7 trise=0 sa=448n sb=448n sca=0 scb=0 scc=0 nrd=44.8m \
+        nrs=44.8m isoring=0
+    NM12 (net162 xb net168 vn vp sub) nch_svt_iso_5p0v length=1.35u \
+        width=(220n) multi=1 m=1 ad=198.4f as=198.4f pd=1.88u ps=1.88u \
+        option_vop=7.7 trise=0 sa=448n sb=448n sca=0 scb=0 scc=0 nrd=44.8m \
+        nrs=44.8m isoring=0
+    NM11 (net168 xb vn vn vp sub) nch_svt_iso_5p0v length=1.35u \
+        width=(220n) multi=1 m=1 ad=198.4f as=198.4f pd=1.88u ps=1.88u \
+        option_vop=7.7 trise=0 sa=448n sb=448n sca=0 scb=0 scc=0 nrd=44.8m \
+        nrs=44.8m isoring=0
+    NM10 (net174 a vn vn vp sub) nch_svt_iso_5p0v length=1.4u width=(450n) \
+        multi=1 m=1 ad=216f as=216f pd=1.86u ps=1.86u option_vop=7.7 \
+        trise=0 sa=448n sb=448n sca=0 scb=0 scc=0 nrd=44.8m nrs=44.8m \
+        isoring=0
+    PM21 (vtn a net67 vp sub) pch_svt_iso_5p0v length=1.3u width=(900n) \
+        multi=1 m=1 ad=432f as=432f pd=2.76u ps=2.76u option_vop=7.7 \
+        trise=0 sa=448n sb=448n sca=0 scb=0 scc=0 nrd=44.8m nrs=44.8m \
+        isoring=0
+    PM20 (xb ahyst vp vp sub) pch_svt_iso_5p0v length=500n width=(4.05u) \
+        multi=1 m=1 ad=1.944p as=1.944p pd=9.06u ps=9.06u option_vop=7.7 \
+        trise=0 sa=448n sb=448n sca=0 scb=0 scc=0 nrd=44.8m nrs=44.8m \
+        isoring=0
+    PM19 (ahyst vtp vp vp sub) pch_svt_iso_5p0v length=500n width=(4.05u) \
+        multi=1 m=1 ad=1.944p as=1.944p pd=9.06u ps=9.06u option_vop=7.7 \
+        trise=0 sa=448n sb=448n sca=0 scb=0 scc=0 nrd=44.8m nrs=44.8m \
+        isoring=0
+    PM18 (vtp a vp vp sub) pch_svt_iso_5p0v length=500n width=(4.05u) \
+        multi=1 m=1 ad=1.944p as=1.944p pd=9.06u ps=9.06u option_vop=7.7 \
+        trise=0 sa=448n sb=448n sca=0 scb=0 scc=0 nrd=44.8m nrs=44.8m \
+        isoring=0
+    PM17 (ahyst xb net87 vp sub) pch_svt_iso_5p0v length=1.32u \
+        width=(440n) multi=1 m=1 ad=211.2f as=211.2f pd=1.84u ps=1.84u \
+        option_vop=7.7 trise=0 sa=448n sb=448n sca=0 scb=0 scc=0 nrd=44.8m \
+        nrs=44.8m isoring=0
+    PM16 (net97 xb vp vp sub) pch_svt_iso_5p0v length=1.32u width=(440n) \
+        multi=1 m=1 ad=211.2f as=211.2f pd=1.84u ps=1.84u option_vop=7.7 \
+        trise=0 sa=448n sb=448n sca=0 scb=0 scc=0 nrd=44.8m nrs=44.8m \
+        isoring=0
+    PM15 (net107 xb net97 vp sub) pch_svt_iso_5p0v length=1.32u \
+        width=(440n) multi=1 m=1 ad=211.2f as=211.2f pd=1.84u ps=1.84u \
+        option_vop=7.7 trise=0 sa=448n sb=448n sca=0 scb=0 scc=0 nrd=44.8m \
+        nrs=44.8m isoring=0
+    PM14 (x xb vp vp sub) pch_svt_iso_5p0v length=500n width=(4.05u) \
+        multi=1 m=1 ad=1.944p as=1.944p pd=9.06u ps=9.06u option_vop=7.7 \
+        trise=0 sa=448n sb=448n sca=0 scb=0 scc=0 nrd=44.8m nrs=44.8m \
+        isoring=0
+    PM13 (net87 xb net107 vp sub) pch_svt_iso_5p0v length=1.32u \
+        width=(440n) multi=1 m=1 ad=211.2f as=211.2f pd=1.84u ps=1.84u \
+        option_vop=7.7 trise=0 sa=448n sb=448n sca=0 scb=0 scc=0 nrd=44.8m \
+        nrs=44.8m isoring=0
+    PM12 (net117 a vp vp sub) pch_svt_iso_5p0v length=1.3u width=(900n) \
+        multi=1 m=1 ad=432f as=432f pd=2.76u ps=2.76u option_vop=7.7 \
+        trise=0 sa=448n sb=448n sca=0 scb=0 scc=0 nrd=44.8m nrs=44.8m \
+        isoring=0
+    PM11 (net67 a net117 vp sub) pch_svt_iso_5p0v length=1.3u width=(900n) \
+        multi=1 m=1 ad=432f as=432f pd=2.76u ps=2.76u option_vop=7.7 \
+        trise=0 sa=448n sb=448n sca=0 scb=0 scc=0 nrd=44.8m nrs=44.8m \
+        isoring=0
+ends V5ISO_SCHMT_AR
+// End of subcircuit definition.
+
+// Library name: Kakia_sim_steven
+// Cell name: Comp1_A
+// View name: schematic
+subckt Comp1_A hyst out outb ref sig src0u5 sub vn vp
+    I5 (det sub vn vp out outb) V5ISO_SCHMT_AR
+    NM16 (ltp src0u5 vn vn vp sub) nch_svt_iso_5p0v length=2u width=(4u) \
+        multi=2 m=1 ad=1.016p as=1.792p pd=4.508u ps=8.896u option_vop=7.7 \
+        trise=0 sa=1.12002u sb=1.12002u sca=0 scb=0 scc=0 nrd=63.5m \
+        nrs=112m isoring=0
+    NM7 (net050 src0u5 vn vn vp sub) nch_svt_iso_5p0v length=2u width=(4u) \
+        multi=1 m=1 ad=1.92p as=1.92p pd=8.96u ps=8.96u option_vop=7.7 \
+        trise=0 sa=448n sb=448n sca=0 scb=0 scc=0 nrd=44.8m nrs=44.8m \
+        isoring=0
+    NM9 (src0u5 src0u5 net179 vn vp sub) nch_svt_iso_5p0v length=2u \
+        width=(4u) multi=1 m=1 ad=1.92p as=1.92p pd=8.96u ps=8.96u \
+        option_vop=7.7 trise=0 sa=448n sb=448n sca=0 scb=0 scc=0 nrd=44.8m \
+        nrs=44.8m isoring=0
+    NM14 (net179 src0u5 vn vn vp sub) nch_svt_iso_5p0v length=2u \
+        width=(4u) multi=1 m=1 ad=1.92p as=1.92p pd=8.96u ps=8.96u \
+        option_vop=7.7 trise=0 sa=448n sb=448n sca=0 scb=0 scc=0 nrd=44.8m \
+        nrs=44.8m isoring=0
+    NM13 (det src0u5 net050 vn vp sub) nch_svt_iso_5p0v length=2u \
+        width=(4u) multi=1 m=1 ad=1.92p as=1.92p pd=8.96u ps=8.96u \
+        option_vop=7.7 trise=0 sa=448n sb=448n sca=0 scb=0 scc=0 nrd=44.8m \
+        nrs=44.8m isoring=0
+    NM6 (pdrv sig ltp vn vp sub) nch_svt_iso_5p0v length=5u width=(2u) \
+        multi=2 m=1 ad=508f as=896f pd=2.508u ps=4.896u option_vop=7.7 \
+        trise=0 sa=1.87185u sb=1.87185u sca=0 scb=0 scc=0 nrd=127m \
+        nrs=224m isoring=0
+    NM4 (ltp src0u5 vn vn vp sub) nch_svt_iso_5p0v length=2u width=(4u) \
+        multi=2 m=1 ad=1.016p as=1.792p pd=4.508u ps=8.896u option_vop=7.7 \
+        trise=0 sa=1.12002u sb=1.12002u sca=0 scb=0 scc=0 nrd=63.5m \
+        nrs=112m isoring=0
+    NM5 (pmirr ref ltp vn vp sub) nch_svt_iso_5p0v length=2u width=(10u) \
+        multi=2 m=1 ad=2.54p as=4.48p pd=10.508u ps=20.896u option_vop=7.7 \
+        trise=0 sa=1.12002u sb=1.12002u sca=0 scb=0 scc=0 nrd=25.4m \
+        nrs=44.8m isoring=0
+    NM0 (hyst outb vn vn vp sub) nch_svt_iso_5p0v length=500n width=(4u) \
+        multi=4 m=1 ad=1.016p as=1.404p pd=4.508u ps=6.702u option_vop=7.7 \
+        trise=0 sa=1.25604u sb=1.25604u sca=0 scb=0 scc=0 nrd=63.5m \
+        nrs=87.75m isoring=0
+    PM20 (pdrv pmirr vp vp sub) pch_svt_iso_5p0v length=0.5u width=(4u) \
+        multi=4 m=1 ad=1.016p as=1.404p pd=4.508u ps=6.702u option_vop=7.7 \
+        trise=0 sa=1.25604u sb=1.25604u sca=0 scb=0 scc=0 nrd=63.5m \
+        nrs=87.75m isoring=0
+    PM16 (pdrv out net038 vp sub) pch_svt_iso_5p0v length=0.5u width=(10u) \
+        multi=1 m=1 ad=4.48p as=4.48p pd=20.896u ps=20.896u option_vop=7.7 \
+        trise=0 sa=448n sb=448n sca=0 scb=0 scc=0 nrd=44.8m nrs=44.8m \
+        isoring=0
+    PM21 (net038 pmirr vp vp sub) pch_svt_iso_5p0v length=0.5u width=(4u) \
+        multi=1 m=1 ad=1.792p as=1.792p pd=8.896u ps=8.896u option_vop=7.7 \
+        trise=0 sa=448n sb=448n sca=0 scb=0 scc=0 nrd=112m nrs=112m \
+        isoring=0
+    PM13 (pmirr pmirr vp vp sub) pch_svt_iso_5p0v length=0.5u width=(4u) \
+        multi=4 m=1 ad=1.016p as=1.404p pd=4.508u ps=6.702u option_vop=7.7 \
+        trise=0 sa=1.25604u sb=1.25604u sca=0 scb=0 scc=0 nrd=63.5m \
+        nrs=87.75m isoring=0
+    PM14 (det pdrv vp vp sub) pch_svt_iso_5p0v length=500n width=(2.5u) \
+        multi=2 m=1 ad=635f as=1.12p pd=3.008u ps=5.896u option_vop=7.7 \
+        trise=0 sa=740.672n sb=740.672n sca=0 scb=0 scc=0 nrd=101.6m \
+        nrs=179.2m isoring=0
+ends Comp1_A
+// End of subcircuit definition.
+
+// Library name: Kakia_sim_steven
+// Cell name: test
+// View name: schematic
+V2 (net5 0) vsource dc=Vin type=dc
+V1 (net1 0) vsource dc=5 type=dc
+V0 (net3 0) vsource dc=1 type=dc
+I6 (net6 Vout net7 net3 net5 net4 0 0 net1) Comp1_A
+I7 (net1 net4) isource dc=500.0n type=dc
+simulatorOptions options reltol=1e-3 vabstol=1e-6 iabstol=1e-12 temp=27 \
+    tnom=27 scalem=1.0 scale=1.0 gmin=1e-12 rforce=1 maxnotes=5 maxwarns=5 \
+    digits=5 cols=80 pivrel=1e-3 sensfile="../psf/sens.output" \
+    checklimitdest=psf inlinesubcktcurrent=subckt 
+dc dc hysteresis=yes param=Vin start=0.5 stop=1.5 step=0.01 \
+    write="spectre.dc" oppoint=rawfile maxiters=150 maxsteps=10000 \
+    annotate=status 
+modelParameter info what=models where=rawfile
+element info what=inst where=rawfile
+outputParameter info what=output where=rawfile
+designParamVals info what=parameters where=rawfile
+primitives info what=primitives where=rawfile
+subckts info what=subckts where=rawfile
